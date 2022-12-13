@@ -1,7 +1,9 @@
 ﻿uses graphABC;
-var x0, y0, mx, my, x1, y1, n: integer;
+
+var x0, y0, mx, my, x1, y1, x2, y2, n: integer;
     l, p, x, y, a, b, h: real;   
 begin
+  writeln('дополнить программу, реализованную в ходе предыдущей лабораторной работы, режимом визуализации');
   x0:= 250;
   y0:= 250;
   SetWindowSize(500, 500);
@@ -30,8 +32,17 @@ begin
     y:= x ** 3 + x ** 2 + 3 * x + 17;
     x1:= x0 + round(x*mx);
     y1:= y0 - round(y*my);
-    line(x1, y1, x1, y0);
+    line(x1, y1, x1, y0);  
     x += h;
   end;
-  
-end.
+   while x <= b do begin
+    SetPenColor(clBlue);
+    y:= x ** 3 + x ** 2 + 3 * x + 17;
+    x2:= x0 + round((x + h)*mx);
+    y2:= y0 - round((y + h)*my);
+    MoveTo(x1, y1);
+    end;
+    while x <= b do begin
+      lineto(
+    end;
+    end.
