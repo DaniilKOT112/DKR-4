@@ -23,7 +23,7 @@ begin
     x += 0.0001
   end; 
   read(a, b, n);
-  h:= b - a/n;
+  h:= (b - a)/n;
   x:= a;
   while x <= b do begin 
     y:= x ** 3 + x ** 2 + 3 * x + 17;
@@ -32,4 +32,5 @@ begin
     line(x1, y1, x1, y0);
     x += h;
   end;
+  
 end.
