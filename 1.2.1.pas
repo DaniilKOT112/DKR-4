@@ -26,6 +26,7 @@ begin
   h:= (b - a)/n;
   x:= a;
   while x <= b do begin 
+    SetPenColor(clBlue);
     y:= x ** 3 + x ** 2 + 3 * x + 17;
     x1:= x0 + round(x*mx);
     y1:= y0 - round(y*my);
